@@ -1,16 +1,9 @@
-# ESC Lab Experiment Manager
+# ESC Lab Experiment Manager (Static HTML)
 
-This project is a minimal Django-based platform to manage student registrations and psychology experiments.
+This repository contains a simple static demonstration page for managing
+student registrations and psychology experiments.  There is no backend
+code; everything is contained in a single HTML file.
 
-## Setup
-1. Create a virtual environment and install dependencies:
-   ```bash
-   pip install -r experiment_manager/requirements.txt
-   ```
-2. Run migrations and start the server:
-   ```bash
-   python experiment_manager/manage.py migrate
-   python experiment_manager/manage.py runserver
-   ```
-
-The admin interface is available at `/admin/`.
+## Usage
+Open `index.html` in a web browser.  The page includes a registration
+form and a table of example experiments that students can join.
