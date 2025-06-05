@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+        form { margin-bottom: 2rem; }
+        label { display: block; margin-top: 0.5rem; }
+        input, select, button { padding: 0.5rem; margin-top: 0.25rem; }
+    </style>
+</head>
+<body>
+    <h1>Experiment Manager (Static Demo)</h1>
+
+    <section id="registration">
+        <h2>Student Registration</h2>
+        <form>
+            <label>Name
+                <input type="text" name="name" required>
+            </label>
+            <label>Student Code
+                <input type="text" name="student_code" required>
+            </label>
+            <label>Course Code
+                <select name="course_code">
+                    <option>PSY101</option>
+                    <option>PSY102</option>
+                    <option>PSY103</option>
+                </select>
+            </label>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="experiments">
+        <h2>Available Experiments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Memory Test</td>
+                    <td>Recall word lists after short delays.</td>
+                    <td>1 hour</td>
+                    <td><button>Accept Slot</button></td>
+                </tr>
+                <tr>
+                    <td>Attention Study</td>
+                    <td>Respond to visual cues on screen.</td>
+                    <td>2 hours</td>
+                    <td><button>Accept Slot</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
