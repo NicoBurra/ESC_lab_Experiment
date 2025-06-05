@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ experiment.title }}</title></head>
+<body>
+<h1>{{ experiment.title }}</h1>
+<p>{{ experiment.description }}</p>
+<p>Date: {{ experiment.date }} {{ experiment.time }}</p>
+<p>Duration: {{ experiment.duration }} hours</p>
+<a href="{% url 'accept_experiment' experiment.pk %}">Accept</a>
+</body>
+</html>
